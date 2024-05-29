@@ -13,7 +13,7 @@ const MobileNav = () => {
 
   return (
     <header className="header">
-      <Link href="/" className="h2-bold text-3xl font-bold">
+      <Link href="/" className="h2-bold text-dark-800 font-bold">
          PixelPilot
       </Link>
 
