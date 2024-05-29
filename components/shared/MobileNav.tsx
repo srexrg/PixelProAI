@@ -13,13 +13,8 @@ const MobileNav = () => {
 
   return (
     <header className="header">
-      <Link href="/" className="flex items-center gap-2 md:py-2">
-        <Image
-          src="/assets/images/logo-text.svg"
-          alt="logo"
-          width={180}
-          height={28}
-        />
+      <Link href="/" className="h2-bold text-3xl font-bold">
+         PixelPilot
       </Link>
 
       <nav className="flex gap-2">
@@ -78,7 +73,7 @@ const MobileNav = () => {
         </SignedIn>
 
         <SignedOut>
-          <Button asChild className="button bg-purple-gradient bg-cover">
+          <Button asChild className="button bg-green-600">
             <Link href="/sign-in">Login</Link>
           </Button>
         </SignedOut>

@@ -13,13 +13,8 @@ const Sidebar = () => {
   return (
     <aside className="sidebar">
       <div className="flex size-full flex-col gap-4">
-        <Link href="/" className="sidebar-logo">
-          <Image
-            src="/assets/images/logo-text.svg"
-            alt="logo"
-            width={180}
-            height={28}
-          />
+        <Link href="/" className="h2-bold text-dark-800 font-bold">
+         PixelPilot
         </Link>
 
         <nav className="sidebar-nav">
@@ -33,7 +28,7 @@ const Sidebar = () => {
                     key={link.route}
                     className={`sidebar-nav_element group ${
                       isActive
-                        ? "bg-purple-gradient text-white"
+                        ? "bg-green-400 text-white"
                         : "text-gray-700"
                     }`}
                   >
@@ -43,7 +38,7 @@ const Sidebar = () => {
                         alt="logo"
                         width={24}
                         height={24}
-                        className={`${isActive && "brightness-200"}`}
+                        className={`${isActive && "brightness-400"}`}
                       />
                       {link.label}
                     </Link>
@@ -61,7 +56,7 @@ const Sidebar = () => {
                     key={link.route}
                     className={`sidebar-nav_element group ${
                       isActive
-                        ? "bg-purple-gradient text-white"
+                        ? "bg-green-400 text-white"
                         : "text-gray-700"
                     }`}
                   >
@@ -86,7 +81,7 @@ const Sidebar = () => {
           </SignedIn>
 
           <SignedOut>
-            <Button asChild className="button bg-purple-gradient bg-cover">
+            <Button asChild className="button bg-green-600 bg-cover">
               <Link href="/sign-in">Login</Link>
             </Button>
           </SignedOut>
